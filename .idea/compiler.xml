@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tehas-holdem-hand-comparator" target="1.5" />
+      <module name="tehas-holdem-hand-comparator" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

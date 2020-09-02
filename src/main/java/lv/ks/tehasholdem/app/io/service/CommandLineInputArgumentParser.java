@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 public class CommandLineInputArgumentParser {
 
 	public CommandLineInput parse(String... args) {
+
 		return null;
 	}
 
