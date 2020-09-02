@@ -1,4 +1,4 @@
-package lv.ks.tehasholdem.service;
+package lv.ks.tehasholdem.game.service;
 
 public interface HandStrengthService {
 }

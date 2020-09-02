@@ -1,4 +1,4 @@
-package lv.ks.tehasholdem.enums;
+package lv.ks.tehasholdem.game.enums;
 
 import lombok.Getter;
 
