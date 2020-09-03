@@ -36,8 +36,4 @@ public class CardRankParser {
 			.orElseThrow(NullPointerException::new);
 	}
 
-	public Map<Character, CardRank> getCardRankMap() {
-		return CARD_RANKS_MAP;
-	}
-
 }
