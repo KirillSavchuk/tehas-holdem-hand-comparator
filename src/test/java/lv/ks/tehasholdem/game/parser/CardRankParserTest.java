@@ -23,7 +23,7 @@ class CardRankParserTest {
 
 	@ParameterizedTest
 	@MethodSource("getInvalidCardRankExpectedValues")
-	void parseCardRank_shouldThrowException_whenCardRankNotFound(Character inputCardRank) {
+	void parseCardRank_shouldThrowException_whenCardRankIsNotFound(Character inputCardRank) {
 		assertThrows(NullPointerException.class, () -> cardRankParser.parseCardRank(inputCardRank));
 	}
 

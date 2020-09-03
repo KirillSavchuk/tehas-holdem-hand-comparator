@@ -22,13 +22,9 @@ public class CardSuitParser {
 		CARD_SUITS_MAP.put('s', SPADES);
 	}
 
-	public CardSuit parseCardRank(Character cardSuit) {
+	public CardSuit parseCardSuit(Character cardSuit) {
 		return Optional.ofNullable(CARD_SUITS_MAP.get(cardSuit))
 			.orElseThrow(NullPointerException::new);
-	}
-
-	public Map<Character, CardSuit> getCardSuitMap() {
-		return CARD_SUITS_MAP;
 	}
 
 }
