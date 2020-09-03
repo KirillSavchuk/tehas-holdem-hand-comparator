@@ -1,13 +1,14 @@
 package lv.ks.tehasholdem.game.parser;
 
+import lombok.Getter;
 import lv.ks.tehasholdem.game.enums.CardRank;
 import org.springframework.stereotype.Service;
-
-import static lv.ks.tehasholdem.game.enums.CardRank.*;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+
+import static lv.ks.tehasholdem.game.enums.CardRank.*;
 
 @Service
 public class CardRankParser {
@@ -33,6 +34,10 @@ public class CardRankParser {
 	public CardRank parseCardRank(Character cardRank) {
 		return Optional.ofNullable(CARD_RANKS_MAP.get(cardRank))
 			.orElseThrow(NullPointerException::new);
+	}
+
+	public Map<Character, CardRank> getCardRankMap() {
+		return CARD_RANKS_MAP;
 	}
 
 }

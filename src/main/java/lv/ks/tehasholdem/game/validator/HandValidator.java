@@ -5,13 +5,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.regex.Pattern;
 
+import static lv.ks.tehasholdem.game.common.GameRegex.HAND_PATTERN;
+
 @Service
 public class HandValidator {
 
-	private final Pattern validPattern = Pattern.compile(GameRegex.HAND);
-
 	public boolean isValid(String cardSequence) {
-		return validPattern.matcher(cardSequence).matches();
+		return HAND_PATTERN.matcher(cardSequence).matches();
 	}
 
 }

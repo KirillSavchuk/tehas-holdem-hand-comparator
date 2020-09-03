@@ -27,4 +27,8 @@ public class CardSuitParser {
 			.orElseThrow(NullPointerException::new);
 	}
 
+	public Map<Character, CardSuit> getCardSuitMap() {
+		return CARD_SUITS_MAP;
+	}
+
 }
